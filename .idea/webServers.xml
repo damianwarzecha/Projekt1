@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="d0d84220-dedf-4562-b83a-2228e9823569" name="moj_serw" url="http://192.168.0.77">
+        <fileTransfer host="192.168.0.77" port="50683" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="50683" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

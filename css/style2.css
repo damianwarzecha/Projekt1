@@ -1,0 +1,166 @@
+#kon{
+    float: top;
+    width: 100%;
+    height: 550px;
+    overflow-x: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+::-webkit-scrollbar {
+    height: 12px;
+    width: 12px;
+    background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #393812;
+    -webkit-border-radius: 1ex;
+    -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+}
+
+::-webkit-scrollbar-corner {
+    background: #000;
+}
+
+.plus{
+    width: 256px;
+    height: 256px;
+    position: absolute;
+    top: 80px;
+    cursor: pointer;
+}
+
+#del{
+    width: 40px;
+    height: 40px;
+    background-size: 100%;
+}
+
+ul{
+    margin-left: 5px;
+    padding-left: 0px;
+    position: absolute;
+    display:table;
+    white-space:nowrap;
+    list-style:none;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+li:hover{
+    border: 5px solid white;
+}
+
+li {
+    position: relative;
+    padding: 100px;
+    border: 5px solid rgba(0,0,0,0);
+    display:table-cell;
+}
+
+h2{
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.control{
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.control > img{
+    width: 40px;
+    height: 40px;
+    background-size: 100%;
+}
+
+
+.cube {
+    width: 200px;
+    height: 200px;
+    -webkit-perspective: 500px;
+    display:block;
+}
+
+.obrot1{
+    -webkit-animation: obrot1 1s linear;
+}
+.obrot2{
+    -webkit-animation: obrot2 1s linear;
+}
+.obrot3{
+    -webkit-animation: obrot3 1s linear;
+}
+.obrot4{
+    -webkit-animation: obrot4 1s linear;
+}
+
+.parent {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.parent > div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.front {
+    background-image: url("fota.jpg");
+    -webkit-background-size: 100%;
+    -webkit-transform: translateZ(100px);
+}
+.back {
+    background-image: url("fota2.jpg");
+    -webkit-background-size: 100%;
+    -webkit-transform: translateZ(-100px);
+}
+.left {
+    background-image: url("fota3.jpg");
+    -webkit-background-size: 100%;
+    -webkit-transform: rotateY(-90deg) translateZ(100px);
+}
+.right {
+    background-image: url("fota3.jpg");
+    -webkit-background-size: 100%;
+    -webkit-transform: rotateY(90deg) translateZ(100px);
+}
+.top {
+    background-image: url("fota3.jpg");
+    -webkit-background-size: 100%;
+    -webkit-transform: rotateX(-90deg) translateZ(100px);
+}
+.bottom {
+    background-image: url("fota3.jpg");
+    -webkit-background-size: 100%;
+    -webkit-transform: rotateX(90deg) translateZ(100px);
+}
+
+@-webkit-keyframes obrot1 {
+    0% {-webkit-transform: rotateX(0deg) rotateZ(0deg);}
+    100% {-webkit-transform: rotateX(90deg) rotateZ(90deg);}
+}
+@-webkit-keyframes obrot2{
+    0% {-webkit-transform: rotateX(90deg) rotateZ(90deg);}
+    100% {-webkit-transform: rotateX(180deg) rotateZ(180deg);}
+}
+@-webkit-keyframes obrot3 {
+    0% {-webkit-transform: rotateX(180deg) rotateZ(180deg);}
+    100% {-webkit-transform: rotateX(270deg) rotateZ(270deg);}
+}
+@-webkit-keyframes obrot4 {
+    0% {-webkit-transform: rotateX(270deg) rotateZ(270deg);}
+    100% {-webkit-transform: rotateX(360deg) rotateZ(360deg);}
+}
+

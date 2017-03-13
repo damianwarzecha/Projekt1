@@ -1,0 +1,134 @@
+body{
+	font-family: 'Josefin Sans', sans-serif;
+    width: 100%;
+    height: 100%;
+    display: table;
+    background-image: url("fota.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.jumbotron{
+	background-color: rgba(0,0,0,0.6);
+    color: white;
+    box-shadow: 0px 0px 1px 0.5px white;
+}
+
+#addfolder{
+	background-color: rgba(0,0,0,0.6);
+	opacity: 0;
+	z-index: 0;
+	position: absolute;
+}
+
+#tlo{
+	opacity: 0; 
+	transition: all 0.1s;
+	position: absolute;
+    background-color:rgba(0,0,0,0.7);
+    width:100%;
+    height:100%;
+}
+
+#butony{
+	width: 678px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#man_panel{
+	margin-top: 10px;
+  	position: absolute;
+  	top: 0; left: 0; bottom: 0; right: 0;
+  	width: 100%;
+  	height: 10px;
+  	background-color:rgba(0,0,0,0.7);
+	z-index: 1;
+}
+#man_panel input{
+	vertical-align: middle;
+}
+
+
+#folder_panel{
+	margin-top: 150px;
+	margin-bottom: 25px;
+  	position: absolute;
+  	top: 0; left: 0; bottom: 0; right: 0;
+  	width: 100%;
+  	height: auto;
+  	background-color:rgba(0,0,0,0.7);
+}
+
+#o_rej{
+	margin: auto;
+  	position: absolute;
+  	top: 0; left: 0; bottom: 0; right: 0;
+  	width: 40%;
+  	min-height: 400px;
+  	min-width: 500px;
+  	text-align: center;
+  	opacity: 0;
+    background-color:rgba(0,0,0,1);
+  	transition: all 0.1s;
+}
+#o_rej form{
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	top: 50%;
+  	transform: translateY(-50%);
+	width: 40%;
+}
+
+
+#reg form, h3{
+    width: 50%;
+    margin-left: auto;
+    margin-right: 30%;
+    opacity: 1;
+}
+
+#wrapper{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+#register_dialog{
+    background-color: white;
+}
+
+#close{
+	position: relative;
+	height: 20px;
+	width: 20px;
+	margin-left: 1px;
+	margin-top: -55px;
+	color: white;
+	float: right;
+}
+
+
+.form-control span {
+    display: none;
+    padding: 2px 3px;
+    margin-left: 8px;
+    width: 130px;
+}
+
+.form-control:hover span{
+    display: inline;
+    position: absolute;
+    margin: 15px 0 0 5px;
+    background: #dddddd;
+    border: 1px solid #b30000;
+    color: #000000;
+    -moz-opacity: 0.8;
+    opacity:.80;
+    filter: alpha(opacity=80);
+    text-align: center;
+}
